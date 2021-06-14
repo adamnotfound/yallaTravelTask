@@ -1,0 +1,45 @@
+{
+  "name": "travelyalla",
+  "version": "1.0.0",
+  "description": "TravelYalla Task",
+  "main": "server.js",
+  "homepage": "/",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "frontend": "npm start --prefix frontend : .env",
+    "dev": "concurrently \"npm run server\" \"npm run frontend\"",
+    "test": "npm run build --prefix frontend && npm run start",
+    "install-frontend": "npm install --prefix frontend --silent",
+    "build-frontend": "npm run build --prefix frontend",
+    "deploy": "npm install --prefix frontend --silent && npm run build --prefix frontend"
+  },
+  "keywords": [],
+  "author": "Adam",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.6.0",
+    "config": "^3.3.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.6.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "find-config": "^1.0.0",
+    "http": "0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.13",
+    "mongoose-unique-validator": "^2.0.3",
+    "multer": "^1.4.2",
+    "path": "^0.12.7",
+    "react-bootstrap": "^1.6.1",
+    "request": "^2.88.2",
+    "typescript": "^4.3.2"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.4"
+  }
+}
