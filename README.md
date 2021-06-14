@@ -1,7 +1,11 @@
 # yallaTravelTask
 
 
-To run locally use
+**To run locally, open terminal in the project's directory and run the following commands:
+**
+
 ```sh
-npm run dev
+npm i
+cd frontend && npm i
+cd ../ && npm run dev
 ```
